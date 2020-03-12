@@ -12,6 +12,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.nu {
+  background-color: #772C98 !important;
+  color: #f8f9fa !important;
+}
+
 /* The device with borders */
 .smartphone {
   position: relative !important;
@@ -22,6 +27,7 @@ body {
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
+  box-sizing: content-box !important;
 }
 
 /* The horizontal line on the top of the device */
@@ -56,12 +62,18 @@ body {
 .smartphone .content {
   width: 360px !important;
   height: 640px !important;
-  background: #772C98;
+  background: #ffffff;
   color: #767676;
   overflow-y: auto !important;
 }
 
+/* Sets the phone top bar */
+.phone-bar {
+  display: grid;
+}
+
 /* Hide all content screens initially */
-.smartphone .content>div {
+.smartphone .content .tela1, .smartphone .content .tela2 {
   display: none;
+  margin: 1em;
 }
