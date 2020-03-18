@@ -20,54 +20,54 @@
   
   <div class="smartphone">
   <div class="content">
-    <div class="nu phone-bar"><span class="float-left">9:42&nbsp<span class="fa fa-location-arrow"></span><span class="float-right"><span class="fa fa-bluetooth-b">&nbsp<span class="fa fa-wifi">&nbsp<span class="fa fa-battery-full"></span></span></div>
+    <div class="nu phone-bar"><span class="float-left">&nbsp9:42&nbsp<span class="fa fa-location-arrow"></span><span class="float-right"><span class="fa fa-bluetooth-b">&nbsp<span class="fa fa-wifi">&nbsp<span class="fa fa-battery-full"></span>&nbsp</span></div>
     <div class="tela1">
       <h5>Vamos criar um sonho! Que nome você quer dar para ele?</h5><br>
       <div class="input-group">
-        <input type="text" class="form-control" name="Nome" placeholder="Viagem para Paris"></input>
+        <input type="text" class="form-control" name="nome" placeholder="Viagem para Paris"></input>
       </div><br><br>
       <h5>Quanto você quer guardar?</h5><br>
       <div class="input-group">
         <div class="input-group-prepend"><span class="input-group-text">R$</span></div>
-        <input id='valor' type="text" class="form-control" name="Valor" placeholder="5600"></input>
-      </div><br><br>
+        <input id="valor_total" type="text" class="form-control" name="valor" placeholder="6500"></input>
+      </div><br>
       <div class="sonho-option">
-      <h5>E quando você quer realizar seu sonho?</h5><br>
-      <div class="input-group">
-        <select class="custom-select" id="Mes">
-          <option value="1">Janeiro</option>
-          <option value="2">Fevereiro</option>
-          <option value="3">Março</option>
-          <option value="4">Abril</option>
-          <option value="5">Maio</option>
-          <option value="6">Junho</option>
-          <option value="7">Julho</option>
-          <option value="8">Agosto</option>
-          <option value="9">Setembro</option>
-          <option value="10">Outubro</option>
-          <option value="11">Novembro</option>
-          <option value="12" selected>Dezembro</option>
-        </select>
-        <select class="custom-select" id="Ano">
-          <option value="2020" selected>2020</option>
-          <option value="2021">2021</option>
-          <option value="2022">2022</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
-          <option value="2025">2025</option>
-        </select>
-      </div>
-    </div>
+        <h5>E quando você quer realizar seu sonho?</h5><br>
+        <div class="input-group">
+          <select class="custom-select" id="mes">
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12" selected>Dezembro</option>
+          </select>
+          <select class="custom-select" id="ano">
+            <option value="2020" selected>2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
       <button type="button" id="goto2" class="btn nu">Continuar</button>
+      </div>
     </div>
     <div class="tela2">
       <h5>Para realizar seu sonho, precisará guardar</h5><br>
-      <h3 class="text-center" id='flay'>R$ 560,00 /mes</h3><br>
+      <h3 class="text-center" id="valor_mensal">R$ 560,00 /mes</h3><br>
       <h5>Guardar todo mês automaticamente? <button type="button" id="saveAutomatically" class="btn btn-light"><span class="fa fa-heart text-danger"></span></button></h5><br><br><br>
       <button type="button" id="goto1" class="btn btn-lg btn-outline-danger float-right">Não</button><button type="button" id="goto3" class="btn btn-lg nu float-right">Vamos Lá!</button>
     </div>
   </div>
-</div>
+  </div>
   
   <!-- Load javascript libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
