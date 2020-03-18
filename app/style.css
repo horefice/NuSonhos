@@ -70,10 +70,28 @@ body {
 /* Sets the phone top bar */
 .phone-bar {
   display: grid;
+  padding: 0 0.5rem;
 }
 
 /* Hide all content screens initially */
 .smartphone .content .tela1, .smartphone .content .tela2 {
   display: none;
   margin: 1em;
+  padding: 7%;
 }
+
+.tela1 .btn {
+  width: 100%;
+  margin: 2.5rem 0 0 0;
+}
+
+
+.sonho-option {
+  margin-top: -1rem;
+}
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+

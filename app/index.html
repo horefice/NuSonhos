@@ -9,6 +9,7 @@
   <!-- Load css libraries -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://use.fontawesome.com/36ed110b40.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- Load our css code -->
   <link rel="stylesheet" type="text/css" href="./style.css">
@@ -30,6 +31,7 @@
         <div class="input-group-prepend"><span class="input-group-text">R$</span></div>
         <input type="text" class="form-control" name="Valor" placeholder="5600"></input>
       </div><br><br>
+      <div class="sonho-option">
       <h5>E quando você quer realizar seu sonho?</h5><br>
       <div class="input-group">
         <select class="custom-select" id="Mes">
@@ -54,11 +56,12 @@
           <option value="2024">2024</option>
           <option value="2025">2025</option>
         </select>
-      </div><br><br><br>
-      <button type="button" id="goto2" class="btn nu float-right">Continuar</button>
+      </div>
+    </div>
+      <button type="button" id="goto2" class="btn nu">Continuar</button>
     </div>
     <div class="tela2">
-      <h5>Para realizar seu sonho, precisará guarda</h5><br>
+      <h5>Para realizar seu sonho, precisará guardar</h5><br>
       <h3 class="text-center">R$ 560,00 /mes</h3><br>
       <h5>Guardar todo mês automaticamente? <button type="button" id="saveAutomatically" class="btn btn-light"><span class="fa fa-heart text-danger"></span></button></h5><br><br><br>
       <button type="button" id="goto1" class="btn btn-lg btn-outline-danger float-right">Não</button><button type="button" id="goto3" class="btn btn-lg nu float-right">Vamos Lá!</button>
@@ -74,5 +77,4 @@
   <!-- Load our javascript -->
   <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
