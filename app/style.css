@@ -17,6 +17,10 @@ body {
   color: #f8f9fa !important;
 }
 
+.container {
+  margin: 2em auto;
+}
+
 /* The device with borders */
 .smartphone {
   position: relative !important;
@@ -61,7 +65,7 @@ body {
 /* The screen (or content) of the device */
 .smartphone .content {
   width: 360px !important;
-  height: 640px !important;
+  height: 616 !important;
   background: #ffffff;
   color: #767676;
   overflow-y: auto !important;
@@ -69,11 +73,13 @@ body {
 
 /* Sets the phone top bar */
 .phone-bar {
-  display: grid;
+  display: flow-root;
+  height: 24px !important;
+  margin: 0 !important;
 }
 
 /* Hide all content screens initially */
-.smartphone .content .tela1, .smartphone .content .tela2 {
+.smartphone .content>div {
   display: none;
   margin: 1em;
   padding: 7%;
