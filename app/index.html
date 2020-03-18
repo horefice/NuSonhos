@@ -29,24 +29,24 @@
       <h5>Quanto você quer guardar?</h5><br>
       <div class="input-group">
         <div class="input-group-prepend"><span class="input-group-text">R$</span></div>
-        <input type="text" class="form-control" name="Valor" placeholder="5600"></input>
+        <input id='valor' type="text" class="form-control" name="Valor" placeholder="5600"></input>
       </div><br><br>
       <div class="sonho-option">
       <h5>E quando você quer realizar seu sonho?</h5><br>
       <div class="input-group">
         <select class="custom-select" id="Mes">
-          <option value="Janeiro">Janeiro</option>
-          <option value="Fevereiro">Fevereiro</option>
-          <option value="Marco">Março</option>
-          <option value="Abril">Abril</option>
-          <option value="Maio">Maio</option>
-          <option value="Junho">Junho</option>
-          <option value="Julho">Julho</option>
-          <option value="Agosto">Agosto</option>
-          <option value="Setembro">Setembro</option>
-          <option value="Outubro">Outubro</option>
-          <option value="Novembro">Novembro</option>
-          <option value="Dezembro" selected>Dezembro</option>
+          <option value="1">Janeiro</option>
+          <option value="2">Fevereiro</option>
+          <option value="3">Março</option>
+          <option value="4">Abril</option>
+          <option value="5">Maio</option>
+          <option value="6">Junho</option>
+          <option value="7">Julho</option>
+          <option value="8">Agosto</option>
+          <option value="9">Setembro</option>
+          <option value="10">Outubro</option>
+          <option value="11">Novembro</option>
+          <option value="12" selected>Dezembro</option>
         </select>
         <select class="custom-select" id="Ano">
           <option value="2020" selected>2020</option>
@@ -62,7 +62,7 @@
     </div>
     <div class="tela2">
       <h5>Para realizar seu sonho, precisará guardar</h5><br>
-      <h3 class="text-center">R$ 560,00 /mes</h3><br>
+      <h3 class="text-center" id='flay'>R$ 560,00 /mes</h3><br>
       <h5>Guardar todo mês automaticamente? <button type="button" id="saveAutomatically" class="btn btn-light"><span class="fa fa-heart text-danger"></span></button></h5><br><br><br>
       <button type="button" id="goto1" class="btn btn-lg btn-outline-danger float-right">Não</button><button type="button" id="goto3" class="btn btn-lg nu float-right">Vamos Lá!</button>
     </div>
