@@ -14,6 +14,9 @@ body {
   line-height: 1.5;
 }
 
+.nusonhos {
+  font-family: 'Baloo 2', cursive;
+}
 .nu {
   background-color: #772C98 !important;
   color: #f8f9fa !important;
@@ -168,7 +171,7 @@ h2 {
 }
 
 .left-panel-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Baloo 2', cursive;
   font-weight: 300;
 }
 
