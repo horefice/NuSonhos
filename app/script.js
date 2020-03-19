@@ -5,7 +5,7 @@ $(document).ready(function() {
   var valor = 6300
   var mes = 12
   var ano = 2020
-  var salvar_automaticamente = true
+  var icone = "&#128132"
 
   // Go to first content screen
   $(".tela1").show()
@@ -43,13 +43,17 @@ $(document).ready(function() {
     $("#valor_mensal").html('R$ ' + per_month + ' por mês');
   });
 
+  $(".btn-toolbar .btn-group .btn").click(function(elem) {
+    icone = elem.currentTarget.innerText
+  })
+
   $("#goto1").click(function() {
     $(".tela2").fadeOut(DELAY);
     $(".tela1").delay(DELAY).fadeIn(DELAY);
   });
 
   $("#goto3").click(function() {
-    salvar_automaticamente = true
+    $("#nusonho").html(icone)
 
     $(".tela2").fadeOut(DELAY);
     $(".tela3").delay(DELAY).fadeIn(DELAY);

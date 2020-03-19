@@ -102,10 +102,24 @@ h5 {
   margin-bottom: 24px;
 }
 
-.badge {
-  vertical-align: top;
+.btn-toolbar {
+  justify-content: center;
 }
 
-.footer {
-  margin-bottom: 10px;
+.progress {
+  height: 100px;
+}
+
+.progress-bar {
+  height: 5px;
+}
+
+.sonho {
+  position: absolute;
+  font-size: 65px;
+  margin: 3px 20px;
+}
+
+.badge {
+  vertical-align: top;
 }

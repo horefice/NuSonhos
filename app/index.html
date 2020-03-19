@@ -73,14 +73,58 @@
             <div class="tela2">
               <h5>Para realizar seu sonho, precisará guardar</h5><br>
               <h3 class="text-center" id="valor_mensal">R$ 700.00 por mês</h3><br>
-              <h5>Guardar todo mês automaticamente? <button type="button" id="saveAutomatically" class="btn btn-light"><span class="fa fa-heart text-danger"></span></button></h5><br><br><br>
-              <button type="button" id="goto3" class="btn btn-block nu">Vamos Lá!</button><br>
+              <h5>Escolha um ícone</h5>
+              <div class="btn-toolbar text-center" role="toolbar">
+                <div class="btn-group mr-2" role="group">
+                  <button type="button" class="btn btn-light">&#128156;</button>
+                  <button type="button" class="btn btn-light">&#128664;</button>
+                  <button type="button" class="btn btn-light">&#128198;</button>
+                  <button type="button" class="btn btn-light">&#128181;</button>
+                  <button type="button" class="btn btn-light">&#127758;</button>
+                </div><br>
+                <div class="btn-group mr-2" role="group">
+                  <button type="button" class="btn btn-light">&#128132;</button>
+                  <button type="button" class="btn btn-light">&#127968;</button>
+                  <button type="button" class="btn btn-light">&#127973;</button>
+                  <button type="button" class="btn btn-light">&#127917;</button>
+                  <button type="button" class="btn btn-light">&#127891;</button>
+                </div>
+              </div><br><br><br>
+              <button type="button" id="goto3" class="btn btn-block nu">Criar sonho!</button><br>
               <button type="button" id="goto1" class="btn btn-block btn-outline-danger">Agora Não</button>
 
             </div>
             <div class="tela3">
-              <h3>Seus NuSonhos</h3>
-              // TODO
+              <h5>Seus NuSonhos</h5>
+              <div class="row">
+                <div class="col-5 offset-1">
+                  <div class="progress">
+                    <div class="progress-bar nu" style="width: 30%"></div>
+                    <div class="sonho">&#128132;</div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="progress">
+                    <div class="progress-bar nu" style="width: 70%"></div>
+                    <div class="sonho">&#127968;</div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-5 offset-1">
+                  <div class="progress">
+                    <div class="progress-bar nu" style="width: 20%"></div>
+                    <div class="sonho">&#127917;</div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="progress">
+                    <div class="progress-bar nu" style="width: 5%"></div>
+                    <div class="sonho" id="nusonho">&#127758;</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
