@@ -6,6 +6,7 @@ $(document).ready(function() {
   var mes = 12
   var ano = 2020
   var icone = "&#128132"
+  var saldo = 8000
 
   // Go to first content screen
   $(".tela1").show()
@@ -53,7 +54,24 @@ $(document).ready(function() {
   });
 
   $("#goto3").click(function() {
-    $("#nusonho").html(icone)
+    $("#nusonho").html(icone);
+    $("#saldoText").html(saldo);
+
+    // $(".saldo").attr('draggable', true);
+    document.getElementById("saldoDiv").ondragstart = function(e) {
+      var img = document.createElement("img");
+      img.src = "./assets/moneybag.png";
+      e.dataTransfer.setDragImage(img, 0 , 0);
+    }
+
+    $("#nusonho").on("dragover", function(e) {
+      e.preventDefault();
+    });
+    $("#nusonho").on("drop", function(e) {
+      e.preventDefault();
+
+      // TODO
+    })
 
     $(".tela2").fadeOut(DELAY);
     $(".tela3").delay(DELAY).fadeIn(DELAY);
