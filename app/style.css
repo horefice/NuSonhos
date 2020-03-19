@@ -10,6 +10,8 @@ body {
   user-select: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .nu {
@@ -24,13 +26,13 @@ body {
 /* The device with borders */
 .smartphone {
   position: relative !important;
-  width: 360px !important;
-  height: 640px !important;
+  width: 340px !important;
+  height: 610px !important;
   margin: auto;
-  border: 16px black solid;
-  border-top-width: 60px;
-  border-bottom-width: 60px;
-  border-radius: 36px;
+  border: 15px black solid;
+  border-top-width: 50px;
+  border-bottom-width: 50px;
+  border-radius: 25px;
   box-sizing: content-box !important;
 }
 
@@ -38,10 +40,10 @@ body {
 .smartphone:before {
   content: '';
   display: block;
-  width: 60px;
+  width: 50px;
   height: 5px;
   position: absolute;
-  top: -30px;
+  top: -25px;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #333;
@@ -56,7 +58,7 @@ body {
   height: 35px;
   position: absolute;
   left: 50%;
-  bottom: -65px;
+  bottom: -60px;
   transform: translate(-50%, -50%);
   background: #333;
   border-radius: 50%;
@@ -64,8 +66,8 @@ body {
 
 /* The screen (or content) of the device */
 .smartphone .content {
-  width: 360px !important;
-  height: 616 !important;
+  width: 340px !important;
+  height: 586 !important;
   background: #ffffff;
   color: #767676;
   overflow-y: auto !important;
@@ -79,19 +81,31 @@ body {
 }
 
 /* Hide all content screens initially */
-.smartphone .content>div {
+.smartphone .content>div, .info>div {
   display: none;
-  margin: 1em;
+}
+
+.smartphone .content>div {
   padding: 7%;
+}
+
+.info>div {
+  height: 450px;
+}
+
+h2 {
+  display: inline-flex;
 }
 
 h5 {
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  line-height: 1.5;
+  margin-bottom: 24px;
 }
 
-.tela1 .btn {
-  width: 100%;
-  margin: 2.5rem 0 0 0;
+.badge {
+  vertical-align: top;
+}
+
+.footer {
+  margin-bottom: 10px;
 }
