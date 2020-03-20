@@ -22,10 +22,18 @@ git clone https://github.com/horefice/nusonhos.git
 
 e abrir o arquivo index.html no browser.
 
+
+### Demo
+A demo está disponível em https://horefice.github.io/NuSonhos/index.html
+
+
 ### Equipe 
 
 Lucas Bamidele (@lucasbamidele), Henrique Orefice (@horefice) e Teógenes Moura (@teogenesmoura)
 
 ### Referências
 [1] - https://veja.abril.com.br/economia/62-milhoes-de-brasileiros-estao-inadimplentes-diz-spc/
+
+
 [2] - https://www.topinvest.com.br/principais-causas-do-endividamento-das-familias/
+
