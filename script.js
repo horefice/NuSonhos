@@ -13,7 +13,7 @@ $(document).ready(function() {
   // Go to first content screen
   $(".tela0").show()
 
-  $("#goto1").click(function() {
+  $("#gofrom0").click(function() {
     $(".tela0").fadeOut(DELAY);
     $(".tela1").delay(DELAY).fadeIn(DELAY);
   });
