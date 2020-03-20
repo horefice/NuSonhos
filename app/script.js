@@ -9,7 +9,12 @@ $(document).ready(function() {
   var saldo = 8000
 
   // Go to first content screen
-  $(".tela1").show()
+  $(".tela0").show()
+
+  $("#goto0").click(function() {
+    $(".tela0").fadeOut(DELAY);
+    $(".tela1").delay(DELAY).fadeIn(DELAY);
+  });
 
   // Go to another screen buttons
   $("#goto2").click(function() {

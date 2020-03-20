@@ -14,9 +14,42 @@ body {
   line-height: 1.5;
 }
 
+.nusonhos {
+  font-family: 'Baloo 2', cursive;
+}
 .nu {
   background-color: #772C98 !important;
   color: #f8f9fa !important;
+}
+.smartphone .content>.tela0{
+  margin-top: 40%;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #00000a;
+}
+
+.smartphone .content .nusonhos{
+  margin-top: 20%;
+}
+
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container {
@@ -73,6 +106,7 @@ body {
   overflow-y: auto !important;
 }
 
+
 /* Sets the phone top bar */
 .phone-bar {
   display: flow-root;
@@ -89,12 +123,56 @@ body {
   padding: 7%;
 }
 
+/*.tela1 {
+  text-align: justify;
+  line-height: 2;
+}*/
+
 .info>div {
   height: 450px;
+}
+.info>.tela0{
+  text-align: center
+  line-height: 2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  margin-top: 30%;
+  margin-bottom: -15%;
+}
+.info>.tela1{
+  text-align: justify;
+  line-height: 2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 7%;
+}
+
+.info>.tela2{
+  text-align: justify;
+  line-height: 2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  margin-top: 2rem;  
+  margin-bottom: 9%;
+}
+
+.info>.tela3{
+  text-align: center;
+  line-height: 2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  margin-top: 30%; 
+  margin-bottom: -15%; 
 }
 
 h2 {
   display: inline-flex;
+}
+
+.left-panel-title {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 300;
 }
 
 h5 {
@@ -127,4 +205,9 @@ h5 {
 
 .badge {
   vertical-align: top;
+  margin-left: 0.5rem;
+}
+
+.footer {
+  text-align: center;
 }
