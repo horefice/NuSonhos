@@ -147,8 +147,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 3rem;
   padding-top: 30%;
-/*  margin-bottom: -15%;
-*/}
+}
+
 .info>.tela1{
   text-align: justify;
   line-height: 2;
@@ -162,7 +162,7 @@ body {
   line-height: 2;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
-  padding-top: 2rem;  
+  padding-top: 2rem;
 }
 
 .info>.tela3{
@@ -170,7 +170,7 @@ body {
   line-height: 2;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
-  padding-top: 30%; 
+  padding-top: 30%;
 }
 
 h2 {
